@@ -1,0 +1,23 @@
+[project]
+name = "autoencoder"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shivansh", email = "shivansh45334@gamil.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "matplotlib>=3.11.2",
+    "scikit-learn>=1.9.1",
+    "torch>=2.14.0",
+    "torchvision>=0.29.0",
+]
+
+[project.scripts]
+autoencoder = "autoencoder:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
